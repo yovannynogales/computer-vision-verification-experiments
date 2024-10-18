@@ -22,7 +22,11 @@ To set up the project, follow these steps:
     ```sh
     conda install -c conda-forge deepface
     conda install -c conda-forge opencv
-    conda install pytorch
+    conda install pytorch torchvision -c pytorch
+    conda install conda-forge::pytorch-lightning
+    conda install conda-forge::segmentation-models-pytorch
+    conda install bioconda::pyseer
+    python -m pip install pyeer
     conda install matplotlib
     conda install pandas
     conda install numpy
