@@ -27,9 +27,17 @@ To set up the project, follow these steps:
     conda install pandas
     conda install numpy
     conda install scikit-learn
-    conda install jupyter
+    conda install ipykernel #Depends on your preference to configure jupyter notebooks
     ```
-4. Download from [opencv data haarcascades](https://github.com/opencv/opencv/tree/master/data/haarcascades) the necessary files to detect faces and eyes in your properly environment data folder (ex. /opt/miniconda3/envs/computer-vision-verification-experiments/lib/python3.11/site-packages/data/*).
+
+4. Configure jupyter in a different terminal to use for all your conda environments (Depends on your preference to configure jupyter notebooks)
+  ```sh
+    conda deactivate
+    conda install jupyter
+    jupyter notebook
+    ```
+
+5. Download from [opencv data haarcascades](https://github.com/opencv/opencv/tree/master/data/haarcascades) the necessary files to detect faces and eyes in your properly environment data folder (ex. /opt/miniconda3/envs/computer-vision-verification-experiments/lib/python3.11/site-packages/data/*).
   - haarcascade_frontalface_default.xml
   - haarcascade_eye.xml
 
