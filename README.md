@@ -29,6 +29,9 @@ To set up the project, follow these steps:
     conda install scikit-learn
     conda install jupyter
     ```
+4. Download from [opencv data haarcascades](https://github.com/opencv/opencv/tree/master/data/haarcascades) the necessary files to detect faces and eyes in your properly environment data folder (ex. /opt/miniconda3/envs/computer-vision-verification-experiments/lib/python3.11/site-packages/data/*).
+  - haarcascade_frontalface_default.xml
+  - haarcascade_eye.xml
 
 ## Structure of Data folder
  - celeba-dataset/
