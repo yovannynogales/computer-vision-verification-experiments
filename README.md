@@ -14,24 +14,30 @@ To set up the project, follow these steps:
 
 2. Create a virtual environment and activate it:
     ```sh
-    conda create --name computer-vision-verification-experiments python=3.11
-    conda activate computer-vision-verification-experiments
+    conda create --name face-verification-project python=3.11
+    conda create --name tattoo-verification-project python=3.11
     ```
 
 3. Install the required packages:
     ```sh
-    conda install -c conda-forge deepface
-    conda install -c conda-forge opencv
-    conda install pytorch torchvision -c pytorch
-    conda install conda-forge::pytorch-lightning
-    conda install conda-forge::segmentation-models-pytorch
-    conda install bioconda::pyseer
+    setx PATH "%PATH%;C:\Users\lynvp\anaconda3;C:\Users\lynvp\anaconda3\condabin;C:\Users\lynvp\anaconda3\Scripts"
+
+    conda activate face-verification-project
+    conda run pip install deepface==0.0.86
+    conda run pip install tensorflow==2.15.0
+    conda install ipykernel -y
+
+    conda activate tattoo-verification-project
+    conda install pytorch torchvision -c pytorch -y
+    conda install conda-forge::pytorch-lightning -y
+    conda install conda-forge::segmentation-models-pytorch -y
+    conda install bioconda::pyseer -y
     python -m pip install pyeer
-    conda install matplotlib
-    conda install pandas
-    conda install numpy
-    conda install scikit-learn
-    conda install ipykernel #Depends on your preference to configure jupyter notebooks
+    conda install matplotlib -y
+    conda install pandas -y
+    conda install numpy -y
+    conda install scikit-learn -y
+    conda install ipykernel -y #Depends on your preference to configure jupyter notebooks
     ```
 
 4. Configure jupyter in a different terminal to use for all your conda environments (Depends on your preference to configure jupyter notebooks)
